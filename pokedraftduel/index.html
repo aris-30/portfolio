@@ -9,94 +9,106 @@
     body {
       margin: 0;
       padding: 0;
-      background: #0f0f0f;
       font-family: Arial, sans-serif;
-      color: #e5e5e5;
+      color: #ffffff;
+      background: linear-gradient(135deg, #2563eb, #9333ea);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Main card */
+    .container {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px);
+      padding: 50px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 600px;
       text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
     }
 
-    /* Header */
-    .header {
-      margin-top: 120px;
-    }
-
+    /* Title */
     .title {
-      font-size: 52px;
-      font-weight: 700;
-      color: #facc15;
+      font-size: 50px;
+      font-weight: 800;
+      color: #ffeb3b;
+      text-shadow: 0 0 12px rgba(255, 235, 59, 0.7);
       margin-bottom: 10px;
     }
 
     .subtitle {
       font-size: 22px;
-      color: #fef9c3;
-      margin-bottom: 40px;
+      color: #fff8b5;
+      margin-bottom: 30px;
     }
 
     /* Description */
     .description {
-      max-width: 700px;
-      margin: 0 auto;
       font-size: 18px;
       line-height: 1.6;
-      color: #d4d4d4;
-      padding: 0 20px;
-      margin-bottom: 60px;
+      color: #f3f3f3;
+      margin-bottom: 40px;
     }
 
     /* Buttons */
     .menu-button {
+      display: block;
+      width: 80%;
+      margin: 12px auto;
+      padding: 14px;
       font-size: 22px;
-      padding: 14px 32px;
-      background: #facc15;
-      color: #1a1a1a;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
       font-weight: bold;
-      margin: 10px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background: #ffeb3b;
+      color: #1a1a1a;
       transition: 0.2s;
+      box-shadow: 0 4px 0 #c9b200;
     }
 
     .menu-button:hover {
-      background: #fde047;
+      background: #fff176;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 #b59d00;
     }
 
     /* Footer */
     .footer {
-      margin-top: 100px;
+      margin-top: 40px;
       font-size: 14px;
-      color: #777;
-      padding-bottom: 40px;
+      color: #e0e0e0;
+      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="header">
+  <div class="container">
     <div class="title">Poke Draft Duel</div>
-    <div class="subtitle">A Pokémon‑inspired Drafting & Battle Simulator</div>
-  </div>
+    <div class="subtitle">A Strategic Creature Drafting Game</div>
 
-  <div class="description">
-    A logic‑driven project focused on drafting mechanics, battle calculations,
-    and clean system design. Choose between two creatures each round — one for
-    you, one for your opponent — and build a team through strategic trade‑offs.
-    This project highlights backend logic, data modeling, and game system
-    architecture.
-  </div>
+    <div class="description">
+      Build a team through tough choices: each round you pick one creature for
+      yourself and give the other to your opponent. A Pokémon‑inspired project
+      focused on drafting logic, battle calculations, and clean system design.
+    </div>
 
-  <button class="menu-button" onclick="window.location.href='/pokedraftduel/singleplayer'">
-    Singleplayer
-  </button>
+    <button class="menu-button" onclick="window.location.href='/pokedraftduel/singleplayer'">
+      Singleplayer
+    </button>
 
-  <button class="menu-button" onclick="window.location.href='/pokedraftduel/multiplayer'">
-    Multiplayer
-  </button>
+    <button class="menu-button" onclick="window.location.href='/pokedraftduel/multiplayer'">
+      Multiplayer
+    </button>
 
-  <div class="footer">
-    Part of the portfolio of Aris Olson
+    <div class="footer">
+      Created by Aris Olson
+    </div>
   </div>
 
 </body>
