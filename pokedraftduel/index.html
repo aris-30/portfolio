@@ -10,7 +10,7 @@
       text-align: center;
     }
 
-    /* top‑left warning */
+    /* top-left warning */
     .warning {
       position: absolute;
       top: 10px;
@@ -19,7 +19,7 @@
       font-weight: bold;
     }
 
-    /* center container */
+    /* center content */
     .center {
       margin-top: 150px;
     }
@@ -27,12 +27,25 @@
     .title {
       font-size: 48px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
-    .option {
-      font-size: 28px;
-      margin: 10px 0;
+    /* buttons */
+    .menu-button {
+      font-size: 24px;
+      padding: 12px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: white;
+      color: #1e3a8a;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .menu-button:hover {
+      background: #dbeafe;
     }
   </style>
 </head>
@@ -43,8 +56,14 @@
 
   <div class="center">
     <div class="title">Poke Draft Duel</div>
-    <div class="option">Singleplayer</div>
-    <div class="option">Multiplayer</div>
+
+    <button class="menu-button" onclick="window.location.href='/singleplayer'">
+      Singleplayer
+    </button>
+
+    <button class="menu-button" onclick="window.location.href='/multiplayer'">
+      Multiplayer
+    </button>
   </div>
 
 </body>
