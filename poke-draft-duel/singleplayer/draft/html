@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Draft Round</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Choose Your Pokémon</h1>
+
+  <div id="choices"></div>
+
+  <script src="../pokemon-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
